@@ -6,7 +6,8 @@ import { ContentsComponent } from './contents.component';
 import { ContentsRoutingModule } from './contents-routing.module';
 import { MaterialModule } from 'src/app/MaterialModule';
 import { ListComponent } from './list/list.component';
-
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,10 @@ import { ListComponent } from './list/list.component';
   imports: [
     CommonModule,
     MaterialModule,
-    ContentsRoutingModule
+    ContentsRoutingModule,
+    CKEditorModule,
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ContentsModule { }

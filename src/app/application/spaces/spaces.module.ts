@@ -5,13 +5,21 @@ import { SpaceComponent } from './space/space.component';
 import { SpacesComponent } from './spaces.component';
 import { SpacesRoutingModule } from './spaces-routing.module';
 import { MaterialModule } from 'src/app/MaterialModule';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatNativeDateModule } from '@angular/material/core';
+import { CategoryComponent } from './category/category.component';
  
 @NgModule({
-  declarations: [ListSpacesComponent, SpaceComponent, SpacesComponent],
+  declarations: [ListSpacesComponent, SpaceComponent, SpacesComponent, CategoryComponent],
   imports: [
     CommonModule,
     MaterialModule,
-    SpacesRoutingModule
+    SpacesRoutingModule,
+    FormsModule,
+    HttpClientModule, 
+    MatNativeDateModule,
+    ReactiveFormsModule,
   ]
 })
 export class SpacesModule { }

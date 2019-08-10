@@ -1,0 +1,11 @@
+
+.content-title {
+    flex: 1;
+    text-align: left;
+    
+  text-overflow: ellipsis;
+
+  /* Required for text-overflow to do anything */
+  white-space: nowrap;
+  overflow: hidden;
+}

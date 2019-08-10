@@ -15,6 +15,7 @@ const contentsRoutes: Routes = [
             { path: 'view', component: ViewComponent },
             { path: 'view/:id', component: ViewComponent },
             { path: 'content', component: ContentComponent },
+            { path: 'content/:id', component: ContentComponent },
         ]
     }
 ];
