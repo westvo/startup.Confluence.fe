@@ -1,0 +1,15 @@
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened="true" isOpen="true">
+        <app-content-list></app-content-list>
+    </mat-drawer>
+    <div class="example-sidenav-content">
+
+        <button mat-button (click)="drawer.toggle()">
+            <i class="material-icons">
+                menu
+            </i></button>
+
+        Content works!
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>
